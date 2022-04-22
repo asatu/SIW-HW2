@@ -1,7 +1,13 @@
 # SIW-HW2
 Repository Homework 2 
+
+
 Studente: Riccardo Scudieri
+
+
 Corso: Sistemi Informativi su Web
+
+
 Università: Università degli Studi Roma Tre
 
 # Homework 2 (HTML+CSS)
