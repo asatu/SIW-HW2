@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #FFF00040;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+img {
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: 5px;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li {
+    list-style: square outside;
+}
+
+h2 {
+    color: blue;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    background-color: rgb(109, 201, 254);
+}
+
+/* Sezione informazioni */
+.info {
+    text-align: center;
+}
+
+/* Sezione introduttiva del documento */
+.header {
+    padding: 20px;
+    text-align: center;
+    background: white;
+    ;
+}
+
+.header h1 {
+    font-size: 60px;
+}
+
+/* Sezione di navigazione */
+.nav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Personalizzazione nav */
+.nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Cambio colore al passaggio del mouse */
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Colonna sinistra */
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+/* Colonna destra */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+/* Effetto "card" per ciascuna sezione */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Cancella i float dopo le colonne */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Layout reattivo: quando lo schermo è largo meno di 800 px, le due colonne si sovrappongono l'una all'altra invece che una accanto all'altra */
+@media screen and (max-width: 800px) {
+
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Layout reattivo: quando lo schermo ha una larghezza inferiore a 400 px, i collegamenti di navigazione si impilano uno sopra l'altro anziché uno accanto all'altro */
+@media screen and (max-width: 400px) {
+    .nav a {
+        float: none;
+        width: 100%;
+    }
+}
